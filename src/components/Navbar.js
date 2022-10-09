@@ -5,14 +5,19 @@ import { ShoppingCartOutlined } from '@mui/icons-material';
 
 
 const Container=styled.div`
-height: 60px;
-width: 100vw
+min-height: 60px;
+width: 100vw;
 `
 const Wrapper=styled.div`
 padding: 10px 20px;
 display: flex;
 align-items:center;
 justify-content: space-between;
+
+@media only screen and (max-width: 660px){
+    display: grid;
+    justify-content: center;
+}
 `
 const Left=styled.div`
 flex:1;
@@ -34,7 +39,7 @@ padding:5px;
 `
 const Input=styled.input`
 border: none;
-outline:none
+outline:none;
 `
 
 

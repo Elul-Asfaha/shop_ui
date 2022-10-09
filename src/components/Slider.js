@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {sliderItems} from '../data.js'
 
 const Container= styled.div`
-width: 100%;
+width: 100vw;
 height:100vh;
 display: flex;
 position: relative;
@@ -33,7 +33,8 @@ z-index: 2;
 const Wrapper=styled.div`
 height: 100%;
 display: flex;
-transform: translateX();
+transition: all 1.5s ease;
+transform: translateX(${props=>props.slideIndex * -100}vw);
 `;
 
 const Slide=styled.div`
@@ -48,6 +49,9 @@ const ImageContainer=styled.div`
 flex: 1;
 display:flex;
 justify-content: center;
+@media only screen and (max-width: 600px){
+    display: none;
+}
 `;
 const Image=styled.img`
 width: 50%;
@@ -56,10 +60,12 @@ height: 80%;
 const InfoContainer=styled.div`
 flex: 1;
 padding: 50px;
+
+
 `;
 
 const Title= styled.h1`
-font-size: 70px
+font-size: 70px;
 `;
 const Desc= styled.p`
 margin: 50px 0;
@@ -79,7 +85,11 @@ const Slider=()=>{
 
     const [slideIndex,setSlideIndex]=useState(0)
     const handleClick=(direction)=>{
-            (direction==="left" && slideIndex>0)?setSlideIndex(slideIndex-100):setSlideIndex(slideIndex)
+         if(direction==='left'){
+            setSlideIndex(slideIndex>0 ? slideIndex-1: 2)
+         }else{
+            setSlideIndex(slideIndex<2? slideIndex+1: 0)
+         }
            
     }
 
@@ -102,7 +112,7 @@ const Slider=()=>{
             <Arrow direction="left" onClick={()=>handleClick("left")}>
                 <ArrowLeftOutlined/>
             </Arrow>
-            <Wrapper>
+            <Wrapper slideIndex={slideIndex}>
                {displaySlides}
             </Wrapper>
             <Arrow direction="right" onClick={()=>handleClick("right")}>
