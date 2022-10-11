@@ -55,6 +55,10 @@ flex:1;
 display: flex;
 align-items: center;
 justify-content: flex-end;
+
+@media only screen and (max-width: 660px){
+    gap: 2rem;
+}
 `
 const MenuItem= styled.div`
 font-size: 14px;

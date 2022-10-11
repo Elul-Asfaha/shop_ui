@@ -5,6 +5,9 @@ const Container=styled.div`
 display: flex;
 padding: 20px;
 justify-content: space-between;
+@media only screen and (max-width: 660px){
+display: grid
+}
 `;
 
 const Catagories=()=>{

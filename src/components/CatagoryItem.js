@@ -21,14 +21,31 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
+
 `
 const Title=styled.h1`
 color:white;
+margin-bottom: 20px;
 `
-const Button=styled.button``
+const Button=styled.button`
+border: none;
+padding:10px;
+background-collor: white;
+cursor: pointer;
+color: gray;
+font-size: 16px;
+&:hover{
+    color: white;
+    background: black;
+}
+`;
+
+
+
 const CatagoryItem=(items)=>{
-    console.log(items)
-    return(
+
+
+        return(
     <Container>
         <Image src={items.items.img} alt=''/>
         <Info>
