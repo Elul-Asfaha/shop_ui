@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 const Container=styled.div`
 display: flex;
+
+
 @media only screen and (max-width: 600px){
     display: grid;  
     grid-template-column: 1fr;
@@ -58,7 +60,6 @@ margin-bottom: 10px;
 `
 const Right=styled.div`
 flex:1; 
-
 padding: 20px;
 `
 const ContactItem=styled.div` 
@@ -71,7 +72,7 @@ const Footer=()=>{
     return(
         <Container>
             <Left>
-                <Logo>LAMA.</Logo>
+                <Logo translate="no">LAMA.</Logo>
                 <Desc>
                        asp[dk askdl ;sak dl;ask dl;ask 'dk asld ksla;d as; kdas kd' kasd' ]                 
                 </Desc>

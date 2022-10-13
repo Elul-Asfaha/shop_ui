@@ -23,6 +23,11 @@ const Left=styled.div`
 flex:1;
 display: flex;
 align-items:center;
+@media only screen and (max-width: 660px){
+    justify-content: center;
+
+}
+
 
 `
 
@@ -82,7 +87,7 @@ const Navbar=()=>{
                 </Left>
 
                 <Center>
-                    <Logo>
+                    <Logo translate='no'>
                         LAMA.
                     </Logo>    
                 </Center>
