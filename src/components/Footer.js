@@ -3,6 +3,11 @@ import styled from "styled-components";
 
 const Container=styled.div`
 display: flex;
+@media only screen and (max-width: 600px){
+    display: grid;  
+    grid-template-column: 1fr;
+    justify-content: center;
+}
 `
 const Left=styled.div`
 flex:1;
