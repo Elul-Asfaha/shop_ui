@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Announcment from '../components/Announcment.js'
 import Catagories from '../components/Catagories.js'
+import Footer from '../components/Footer.js'
 import Navbar from '../components/Navbar.js'
 import Newsletter from '../components/Newsletter.js'
 import Products from '../components/Products.js'
@@ -20,6 +21,7 @@ return(
         <Catagories/>
         <Products/>
         <Newsletter/>
+        <Footer/>
     </Container>
 )
 }

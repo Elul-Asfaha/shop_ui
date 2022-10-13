@@ -16,7 +16,7 @@ export const sliderItems=[
 },
 {
     id: 3,
-    img: 'https://purepng.com/public/uploads/large/purepng.com-women-shoppingwomenpeoplepersonsfemaleshopping-1121525085526vxpnm.png',
+    img: 'http://pluspng.com/img-png/girls-shopping-png-hd--1133.png',
     title: 'FALL SALE',
     desc:"DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF NEW ARRIVALS.",
     bg: 'EEB34B',
@@ -39,3 +39,55 @@ export const CatagoryItems=[
         img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.4ZKFNJwlukwilY7WHAbp1QHaHa%26pid%3DApi&f=1&ipt=9dc705534343454f38115faef8021d5d2550d55b89b0f02caad284899723c605&ipo=images',
         title:'LIGHT JACKETS'
     },]
+
+    export const popularProducts=[
+        {
+            id: 1,
+            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+            }, 
+        {
+            id: 2,
+            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+        }, 
+        {
+            id: 3,
+            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+        }, 
+        {
+            id: 4,
+            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+            }, 
+        {
+            id: 5,
+            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+        }, 
+        {
+            id: 6,
+            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+        }, 
+        {
+            id: 7,
+            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+            }, 
+        {
+            id: 8,
+            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+        }, 
+        {
+            id: 9,
+            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+        }, 
+        {
+            id: 10,
+            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+        }, 
+        {
+            id: 11,
+            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+            }, 
+        {
+            id: 12,
+            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+        }, 
+            
+    ]

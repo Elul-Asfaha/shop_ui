@@ -20,7 +20,7 @@ cursor: pointer;
 const Container=styled.div`
 flex: 1;
 margin: 5px;
-min-width: 300px;
+min-width: 400px;
 height: 350px;
 display: flex;
 align-items: center;
