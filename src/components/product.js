@@ -20,7 +20,7 @@ cursor: pointer;
 const Container=styled.div`
 flex: 1;
 margin: 5px;
-min-width: 400px;
+min-width: 350px;
 height: 350px;
 display: flex;
 align-items: center;
@@ -63,7 +63,6 @@ transition: all 0.5s ease;
 
 const Product=(props)=>{
 
-console.log(props.items)
     return(
         <Container>
             <Circle/>

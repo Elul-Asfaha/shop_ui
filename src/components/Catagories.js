@@ -1,13 +1,14 @@
 import styled from "styled-components"
 import {CatagoryItems} from '../data.js'
 import CatagoryItem from "./CatagoryItem.js";
+import {mobile} from '../Responsive'
 const Container=styled.div`
+margin: 0;
+padding: 0;
 display: flex;
 padding: 20px;
 justify-content: space-between;
-@media only screen and (max-width: 660px){
-display: grid
-}
+${mobile({padding: "0", flexDirection:"column"})}
 `;
 
 const Catagories=()=>{

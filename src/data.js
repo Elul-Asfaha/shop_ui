@@ -43,51 +43,36 @@ export const CatagoryItems=[
     export const popularProducts=[
         {
             id: 1,
-            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+            img: 'https://picsum.photos/501',
             }, 
         {
             id: 2,
-            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+            img: 'https://picsum.photos/502',
         }, 
         {
             id: 3,
-            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+            img: 'https://picsum.photos/503',
         }, 
         {
             id: 4,
-            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+            img: 'https://picsum.photos/504',
             }, 
         {
             id: 5,
-            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+            img: 'https://picsum.photos/505',
         }, 
         {
             id: 6,
-            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+            img: 'https://picsum.photos/506',
         }, 
         {
             id: 7,
-            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+            img: 'https://picsum.photos/507',
             }, 
         {
             id: 8,
-            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
+            img: 'https://picsum.photos/508',
         }, 
-        {
-            id: 9,
-            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
-        }, 
-        {
-            id: 10,
-            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
-        }, 
-        {
-            id: 11,
-            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
-            }, 
-        {
-            id: 12,
-            img: 'https://vantageapparel.com/Images/ProductImages/High/1978_Grey_silo_logo.png',
-        }, 
+     
             
     ]
