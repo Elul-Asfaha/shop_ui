@@ -9,8 +9,9 @@ import Slider from '../components/Slider.js'
 
 
 const Container=styled.div`
-width: 100vw;
+width: 100%;
 min-width: 360px;
+overflow:hidden;
 `
 const Home=()=>{
 return(

@@ -1,6 +1,6 @@
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "@mui/icons-material";
 import styled from "styled-components";
-
+import {mobile} from "../Responsive"
 
 const Info=styled.div`
 opacity: 0;
@@ -41,6 +41,7 @@ position: absolute;
 const Image=styled.img`
 height: 75%;
 z-index: 2;
+${mobile({height: "100%"})}
 
 `
 const Icon=styled.div`

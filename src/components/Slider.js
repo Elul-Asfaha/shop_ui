@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {sliderItems} from '../data.js'
 import {mobile} from '../Responsive'
 const Container= styled.div`
-width: 100vw;
+width: 100%;
 height:100vh;
 display: flex;
 position: relative;

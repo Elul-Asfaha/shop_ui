@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import {mobile} from '../Responsive'
 const Container=styled.div`
-width: 100vw;
+width: 100%;
 height: 100vh;
-background:
 background:linear-gradient(
     rgba(255,255,255,0.5),
     rgba(255,255,255,0.5)
-), url("https://wallpaperset.com/w/full/5/4/d/395676.jpg") center;
+), url("https://images.pexels.com/photos/972887/pexels-photo-972887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
 background-size: cover;
 display: flex;
 align-items: center;
@@ -25,7 +24,7 @@ const Title=styled.h1`
 font-size: 24px;
 font-weight: 300;
 
-${mobile({textAlign:"center",width:"100%", fontSize:"20px"})}
+${mobile({textAlign:"center",width:"100%", fontSize: "20px"})}
 `
 
 const Form=styled.form`

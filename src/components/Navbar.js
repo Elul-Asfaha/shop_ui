@@ -3,12 +3,13 @@ import SearchIcon from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge';
 import { ShoppingCartOutlined } from '@mui/icons-material';
 import {mobile} from '../Responsive.js'
-
+import {Link} from 'react-router-dom'
 const Container=styled.div`
 min-height: 60px;
-width: 100vw;
+width: 100%;
     ${mobile({height: "50px"})}
 `
+
 const Wrapper=styled.div`
 padding: 10px 20px;
 display: flex;
@@ -68,7 +69,6 @@ cursor: pointer;
 margin-right: 25px;   
 ${mobile({flex: 2,fontSize:"12px", marginLeft:"10px"})}
 `
-
 const Navbar=()=>{
 
  
@@ -85,23 +85,30 @@ const Navbar=()=>{
 
                 <Center>
                     <Logo translate='no'>
-                        LAMA.
+                        <Link to="/">
+                            LAMA.
+                        </Link>
                     </Logo>    
                 </Center>
                 <Right>
                     <MenuItem>
-                        REGISTER
+                        <Link to="/register" >
+                            REGISTER
+                        </Link>
                     </MenuItem>
                     <MenuItem>
-                        SIGN IN
+                        <Link to="/Login">
+                                SIGN IN
+                        </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Badge badgeContent={4} color="primary">
-                        <ShoppingCartOutlined />
-                      </Badge>
+                        <Link to="/Cart">
+                            <Badge badgeContent={4} color="primary">
+                                <ShoppingCartOutlined />
+                            </Badge>
+                       </Link>
                     </MenuItem>
-                
-                
+                   
                 </Right>
             </Wrapper>
         </Container>

@@ -70,7 +70,7 @@ const Footer=()=>{
             <Left>
                 <Logo translate="no">LAMA.</Logo>
                 <Desc>
-                       asp[dk askdl ;sak dl;ask dl;ask 'dk asld ksla;d as; kdas kd' kasd' ]                 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam             
                 </Desc>
                 <SocialContainer>
                     <SocialIcon color='3B5999'>
