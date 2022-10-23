@@ -62,7 +62,7 @@ margin-bottom: 10px;
 const LinkR=styled.a`
 margin: 5px 0;
 font-size: 12px;
-text-decoration: underlined;
+text-decoration: underlined !important;
 cursor: pointer;
 `
 const Login=()=>{
