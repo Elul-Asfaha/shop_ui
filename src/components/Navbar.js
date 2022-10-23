@@ -91,7 +91,7 @@ min-height: 30vh;
 z-index: 1;
 background: white;
 padding: 0.5rem;
-
+background-color: teal;
 display: ${props=>props.toggle===true?"block":"none"}
 `
 
