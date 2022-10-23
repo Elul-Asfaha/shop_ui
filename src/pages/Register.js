@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import {mobile} from '../Responsive'
+import {mobile,tablet} from '../Responsive'
+import { Link } from "react-router-dom";
+import ArrowBackTwoToneIcon from '@mui/icons-material/ArrowBackTwoTone';
 const Container=styled.div`
 width: 100%;
 height: 100vh;
@@ -17,6 +19,7 @@ const Wrapper=styled.div`
 width: 40%;
 background-color: white;
 padding: 20px;
+${tablet({width: "50%"})}
 ${mobile({width: "75%"})}
 `
 
@@ -24,9 +27,14 @@ const Title=styled.h1`
 font-size: 24px;
 font-weight: 300;
 
+display: flex;
+align-items: center;
+text-align: center;
 ${mobile({textAlign:"center",width:"100%", fontSize: "20px"})}
 `
-
+const BackWrapper=styled.div`
+margin-right: 5px;
+`
 const Form=styled.form`
 
 display: flex;
@@ -60,7 +68,14 @@ const Register=()=>{
     return(
         <Container>
             <Wrapper>
-                <Title>CREATE AN ACCOUNT</Title>
+                <Title>
+                    <BackWrapper>
+                        <Link to="/" style={{display: "flex", alignItem: "center"}}>
+                            <ArrowBackTwoToneIcon/>
+                        </Link>
+                    </BackWrapper>    
+                    CREATE AN ACCOUNT
+                </Title>
                 <Form>
                     <Input placeholder="First Name"/>
                     <Input placeholder="Last Name"/>
