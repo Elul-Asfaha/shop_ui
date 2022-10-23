@@ -84,6 +84,7 @@ const MobileRight=styled.div`
 cursor: pointer;
 `
 const MobileMenu=styled.div`
+display: none;
 position: absolute;
 top: 0;
 width: 100%;
