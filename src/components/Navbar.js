@@ -1,9 +1,13 @@
 import styled from 'styled-components'
 import SearchIcon from '@mui/icons-material/Search';    
 import Badge from '@mui/material/Badge';
-import { ShoppingCartOutlined } from '@mui/icons-material';
-import {mobile} from '../Responsive.js'
-import {Link} from 'react-router-dom'
+import {  ShoppingCartOutlined } from '@mui/icons-material';
+import MenuIcon from '@mui/icons-material/Menu';
+import {mobile} from '../Responsive.js';
+import {Link} from 'react-router-dom';
+import CloseIcon from '@mui/icons-material/Close';
+import { useState } from 'react';
+
 const Container=styled.div`
 min-height: 60px;
 width: 100%;
@@ -15,7 +19,7 @@ padding: 10px 20px;
 display: flex;
 align-items:center;
 justify-content: space-between;
-${mobile({padding: "10px 0px"})}
+${mobile({padding: "10px 0px", display: "none"})}
 `
 const Left=styled.div`
 flex:1;
@@ -67,10 +71,41 @@ const MenuItem= styled.div`
 font-size: 14px;
 cursor: pointer;
 margin-right: 25px;   
-${mobile({flex: 2,fontSize:"12px", marginLeft:"10px"})}
+${mobile({flex: 2,fontSize:"18px",margin:"15px 0"})}
+`
+
+const MobileWrapper=styled.div`
+display: none;
+${mobile({    display:"flex",justifyContent:"space-between",alignItems:"center",height:"100%",padding:"0 1rem"})}
+`
+const MobileLeft=styled.div`
+`
+const MobileRight=styled.div`
+cursor: pointer;
+`
+const MobileMenu=styled.div`
+position: absolute;
+top: 0;
+width: 100%;
+min-height: 30vh;
+z-index: 1;
+background: white;
+padding: 0.5rem;
+
+display: ${props=>props.toggle===true?"block":"none"}
+`
+
+
+const BackWrapper=styled.div`
 `
 const Navbar=()=>{
 
+    const [toggleView,setToggleView]=useState(false)
+
+    const handleToggle=()=>{
+        setToggleView(!toggleView)
+        console.log(toggleView)
+    }
  
     return(
         <Container>
@@ -111,7 +146,42 @@ const Navbar=()=>{
                    
                 </Right>
             </Wrapper>
+            <MobileWrapper>
+                <MobileLeft>
+                    <Logo>
+                        <Link to="/">
+                           LAMA.
+                        </Link>
+                    </Logo>
+                </MobileLeft>
+                <MobileRight >
+                    <MenuIcon style={{fontSize: "30px"}} onClick={handleToggle}/>
+                </MobileRight>
+            </MobileWrapper>
+       
+            <MobileMenu toggle={toggleView}>
+                <BackWrapper>
+                    <CloseIcon onClick={handleToggle} style={{cursor: "pointer"}}/>
+                    <MenuItem>
+                        <Link to="/register" >
+                            REGISTER
+                        </Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to="/Login">
+                                SIGN IN
+                        </Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to="/Cart">
+                            <Badge badgeContent={4} color="primary">
+                                <ShoppingCartOutlined />
+                            </Badge>
+                       </Link>
+                    </MenuItem>     
+                </BackWrapper>
+            </MobileMenu>
         </Container>
     )
 }
-export default Navbar
+export default Navbar;

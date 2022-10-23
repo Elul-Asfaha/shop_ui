@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {mobile} from "../Responsive"
+import { Link } from "react-router-dom";
 const Container=styled.div`
 flex:1;
 margin: 3px 0;
@@ -52,7 +53,12 @@ const CatagoryItem=(items)=>{
         <Image src={items.items.img} alt=''/>
         <Info>
             <Title>{items.items.title}</Title>
-            <Button>SHOP NOW</Button>
+            <Link to="/productList">
+                <Button>
+                        SHOP NOW
+                </Button>
+            </Link>
+
         </Info>
     </Container>
 )
